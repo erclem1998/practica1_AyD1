@@ -1,0 +1,9 @@
+
+
+Userimp u= Userimp.find("Usuario 1");
+EntityTransaction= tx=u.getTransaction();
+
+tx.begin();
+Userimp.create(u);
+
+tx.commit();
