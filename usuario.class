@@ -1,0 +1,12 @@
+//clase usuario
+public class Usuario {
+        string username;
+        string password;
+
+        
+        public Usuario(string username_, string password_){
+            this.username=username_;
+            this.password=password_;
+        }
+
+}
