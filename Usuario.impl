@@ -1,0 +1,5 @@
+public class UsuarioImpl implements AbstractFacade<Usuario.class>{
+    public EntityManager em;
+
+    User find(Object id);
+}
