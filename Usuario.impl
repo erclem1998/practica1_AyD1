@@ -1,0 +1,20 @@
+import javax.persistence.*;
+import java.util.List;
+
+Class Userimp implements Usuario{
+    public EntityManager us;
+
+    public Userimp(EntityManager _us){
+        this.us = _us;
+    }
+
+    User find(int usuario){
+        return us.find(Usuario.class, usuario);
+    }
+    void create(Usuario usuario){
+        us.persist(emp)
+    }
+    void remove(Usuario usuario){
+        us.remove(emp)
+    }
+}
