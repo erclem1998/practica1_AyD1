@@ -1,12 +1,29 @@
 //clase usuario
 public class Usuario {
+    
         string username;
         string password;
 
-        
+
         public Usuario(string username_, string password_){
             this.username=username_;
             this.password=password_;
+        }
+
+        public string getUsername(){
+            return username;
+        }
+
+        public void setUsername(string newUsername){
+            this.username=newUsername;
+        }
+
+        public string getPassword(){
+            return password;
+        }
+
+        public void setPassword(string newPassword){
+            this.password=newPassword;
         }
 
 }
