@@ -2,6 +2,6 @@ public class UsuarioImpl implements AbstractFacade<Usuario.class>{
     public EntityManager em;
 
     User find(Object id);
-
+    void create(Objecto entidad);
     User Registro(String user, String pwd);
 }
