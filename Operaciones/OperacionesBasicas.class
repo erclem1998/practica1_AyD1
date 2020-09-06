@@ -56,8 +56,9 @@ public class OperacionesBasicas{
         return primo;
     }
 
-    public int Area_Triangulo(int base,int altura){
-        return (base*altura)/2;
+    public String Area_Triangulo(int base,int altura){
+        float area = (base*altura)/2;
+        return "Base: "+base.toString()+"\nAltura: "+altura.toString()+"\nArea: "+area.toString();
     }
     
     int sumasucesiva(int n) {
