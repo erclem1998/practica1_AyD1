@@ -6,4 +6,11 @@ public class Proceso{
             return usuario;
     }
 
+    public Usuario Registro(String user, String pass){
+            Usuario usuario= UsuarioImpl.Registro(user,pass);
+            DoLogger.log().info("Usuario registrado");
+            return usuario;
+    }
+    
+
 }
