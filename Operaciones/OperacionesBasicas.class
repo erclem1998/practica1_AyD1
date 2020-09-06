@@ -14,9 +14,10 @@ public class OperacionesBasicas{
         return (par(numi - 1));
     }
 
-    public boolean esPar(int valor){
+    public boolean esPar(int valor1){
         int a=par(valor);
         if(a==1){
+            System.out.println("Es numero par");
             return true;
         }
         else{
@@ -26,6 +27,9 @@ public class OperacionesBasicas{
     
     int fibonacci(int n)
     {
+        if(n >= 100){
+            return 0;
+        }
         if (n>1){
         return fibonacci(n-1) + fibonacci(n-2);
         }
@@ -40,8 +44,8 @@ public class OperacionesBasicas{
         }
     }
 
-    boolean Primo(int numero){
-
+    boolean Primo(int numero1,int numero2, int numero3){
+        int numero= numero1+numero2+numero3;
         int contador = 2;
         boolean primo=true;
         while ((primo) && (contador!=numero)){
@@ -52,13 +56,14 @@ public class OperacionesBasicas{
         return primo;
     }
 
-    public int Area_Triangulo(int base,int altura){
-        return (base*altura)/2;
+    public String Area_Triangulo(int base,int altura){
+        float area = (base*altura)/2;
+        return "Base: "+base.toString()+"\nAltura: "+altura.toString()+"\nArea: "+area.toString();
     }
     
-    int sumasucesiva(int n) {
+    int sumasucesiva(int x, int n) {
         int ressum = 0;
-        for ( int i = 0 ; i <= n ; i++ ) {
+        for ( int i = x ; i <= n ; i++ ) {
             ressum += i;
         }
         return ressum;
