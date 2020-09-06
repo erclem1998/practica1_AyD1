@@ -21,6 +21,23 @@ public class Login {
         }
     }
 
+    public void RegistroListener(){
+        try{
+            Procesos.Registro(this.user,this.pass);
+            Util.crearMensaje("Registro Exitoso",SEVERITY_INFO);
+        }catch (Exception e){
+            Util.crearMensaje("Registro Fallido",SEVERITY_ERROR);
+        }
+    }
+
+    public String getPassword(){
+        return password;
+    }
+
+    public void getUser(){
+        return user;
+    }
+
     public void setUser(String user){
         this.user=user;
     }
