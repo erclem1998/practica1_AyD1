@@ -14,7 +14,7 @@ public class OperacionesBasicas{
         return (par(numi - 1));
     }
 
-    public boolean esPar(int valor){
+    public boolean esPar(int valor1){
         int a=par(valor);
         if(a==1){
             return true;
@@ -40,8 +40,8 @@ public class OperacionesBasicas{
         }
     }
 
-    boolean Primo(int numero){
-
+    boolean Primo(int numero1,int numero2, int numero3){
+        int numero= numero1+numero2+numero3;
         int contador = 2;
         boolean primo=true;
         while ((primo) && (contador!=numero)){
