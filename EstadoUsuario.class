@@ -1,0 +1,30 @@
+public class EstadoUsuario {
+    private int codEstado;
+    private String descripcion;
+
+    enum valores {
+        acivo,
+        noactivo
+    }
+
+    public EstadoUsuario(int codEstado, String descripcion) {
+        this.codEstado = codEstado;
+        this.descripcion = descripcion;
+    }
+
+    public int getCodEstado(){
+        return codEstado;
+    }
+
+    public void setCodEstado(int codEstado) {
+        this.codEstado = codEstado;
+    }
+
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
+}
