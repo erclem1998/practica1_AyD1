@@ -56,9 +56,9 @@ public class OperacionesBasicas{
         return (base*altura)/2;
     }
     
-    int sumasucesiva(int n) {
+    int sumasucesiva(int x, int n) {
         int ressum = 0;
-        for ( int i = 0 ; i <= n ; i++ ) {
+        for ( int i = x ; i <= n ; i++ ) {
             ressum += i;
         }
         return ressum;
