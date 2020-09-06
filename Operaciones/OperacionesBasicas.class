@@ -17,6 +17,7 @@ public class OperacionesBasicas{
     public boolean esPar(int valor){
         int a=par(valor);
         if(a==1){
+            System.out.println("Es numero par");
             return true;
         }
         else{
