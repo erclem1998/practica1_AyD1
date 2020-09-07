@@ -7,6 +7,9 @@ public class EstadoUsuario {
         noactivo
     }
 
+    EstadoUsuario.valores.NoActivo.name(); 
+    EstadoUsuario.valores.NoActivo;
+
     public EstadoUsuario(int codEstado, String descripcion) {
         this.codEstado = codEstado;
         this.descripcion = descripcion;
