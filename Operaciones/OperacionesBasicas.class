@@ -68,4 +68,24 @@ public class OperacionesBasicas{
         }
         return ressum;
     }
+
+    int suma(int a, int b){
+        return a+b;
+    }
+
+    int negativo (int num) {
+        return a * -1;
+    }
+
+    int multiplicacion(int x1, int x2){
+        return x1*x2;
+    }
+
+    public float Division(int a, int b){
+        if(b > 0){
+            return a/b;           
+        }else{
+            return -99999;
+        }
+    }
 }

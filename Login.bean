@@ -24,9 +24,9 @@ public class Login {
     public void RegistroListener(){
         try{
             Procesos.Registro(this.user,this.pass);
-            Util.crearMensaje("Registro Exitoso",SEVERITY_INFO);
+            Util.crearMensaje("Registro Exitoso, los campos son correctos y se ha registrado",SEVERITY_INFO);
         }catch (Exception e){
-            Util.crearMensaje("Registro Fallido",SEVERITY_ERROR);
+            Util.crearMensaje("Registro Fallido, los campos son incorrectos y no se ha podido registrar",SEVERITY_ERROR);
         }
     }
 
