@@ -88,4 +88,8 @@ public class OperacionesBasicas{
             return -99999;
         }
     }
+
+    int resta(int a, int b){
+        return a-b;
+    }
 }
