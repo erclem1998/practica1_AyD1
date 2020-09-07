@@ -1,9 +1,26 @@
 public class Proceso{
 
     public Usuario Login(String user, String pass){
-            Usuario usuario= UsuarioImpl.find(user);
-            DoLogger.log().info("Usuario recuperado");
-            return usuario;
+        String specialChars = "~`!@#$%^&*()-_=+\\|[{]};:'\",<.>/?";
+        boolean specialchar = false;
+        boolean numero = false;
+        if (user.length() > 0 && user.length() < 15 ){
+            for (int i = 0; i < user.length(); i++) {
+                if (specialChars.contains(String.valueOf(user.charAt(i)))) {
+                    specialchar = true;
+                } else if (Character.isDigit(Integer.valueOf(user.charAt(i)))) {
+                    numero = true;
+                }
+            }
+            if (specialchar && numero) {
+                Usuario usuario= UsuarioImpl.find(user);
+                DoLogger.log().info("Usuario recuperado");
+                return usuario;
+            } else {
+                DoLogger.log().info("Cadena de usuario no valida");
+            }
+        }   
+        return null;
     }
 
     public Usuario Registro(String user, String pass){
