@@ -76,4 +76,8 @@ public class OperacionesBasicas{
     int negativo (int num) {
         return a * -1;
     }
-}a
+
+    int multiplicacion(int x1, int x2){
+        return x1*x2;
+    }
+}
