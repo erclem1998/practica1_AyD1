@@ -13,10 +13,10 @@ public class Login {
     {
         try {
             if(Procesos.Login(user, pass)) {
-                Util.crearMensaje("Login Exitoso", SEVERITY_INFO);
+                Util.crearMensaje("Login Exitoso, El Usuario puede ingresar", SEVERITY_INFO);
             }
             else {
-                Util.crearMensaje("Login Fallido", SEVERITY_WARN);
+                Util.crearMensaje("Login Fallido, Username o Password incorrectos", SEVERITY_WARN);
             }
         }
     }
